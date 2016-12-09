@@ -17,6 +17,7 @@
     "typestyle": "*"
   },
   "devDependencies": {
+    "typescript": "2.2.0-dev.20161130",
     "typestyle": "*"
   }
 }
