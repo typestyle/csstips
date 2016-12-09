@@ -9,7 +9,8 @@
     "test": "npm run build",
     "preversion": "npm run build",
     "postversion": "git push --follow-tags && npm publish",
-    "start": "npm run build -- -w"
+    "start": "npm run build -- -w",
+    "u": "npm install typestyle@latest --save-exact --save-dev"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +19,6 @@
   },
   "devDependencies": {
     "typescript": "2.2.0-dev.20161130",
-    "typestyle": "*"
+    "typestyle": "0.15.0"
   }
 }
