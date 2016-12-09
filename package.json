@@ -2,10 +2,21 @@
   "name": "csstips",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "typings": "./lib/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p .",
+    "test": "npm run build",
+    "preversion": "npm run build",
+    "postversion": "git push --follow-tags && npm publish",
+    "start": "npm run build -- -w"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "typestyle": "*"
+  },
+  "devDependencies": {
+    "typestyle": "*"
+  }
 }
