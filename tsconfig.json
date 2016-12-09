@@ -1,27 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "isolatedModules": false,
-    "jsx": "react",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "declaration": false,
-    "noImplicitAny": false,
-    "removeComments": true,
-    "noLib": false,
-    "preserveConstEnums": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "outDir": "lib"
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "declaration": true,
+    "outDir": "./lib"
   },
-  "compileOnSave": true,
   "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules",
-    "typings/browser",
-    "typings/browser.d.ts"
+    "src/**/*"
   ]
 }
