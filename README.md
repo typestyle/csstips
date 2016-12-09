@@ -6,7 +6,7 @@ A bunch of csstips that you can use with TypeStyle. What is a csstip?
 - A mixin (e.g. flexbox stuff).
 - Functions to make page setup easier (`setupPage`) and CSS designs consistent (`normalize`).
 
-# Reference 
+# Quick exploration 
 
 Just use TypeScript autocomplete e.g 
 
@@ -23,3 +23,7 @@ It essentially makes it easier for:
 - Beginners to explore CSS.
 - Experts to review CSS / intent.
 - Provides examples for how to create mixins / mixin creating functions for TypeStyle.
+
+# Docs 
+
+[http://typestyle.io](http://typestyle.io)
