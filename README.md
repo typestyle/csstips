@@ -4,6 +4,7 @@ A bunch of csstips that you can use with TypeStyle. What is a csstip?
 
 - A function that returns a mixin (e.g. `padding`)
 - A mixin (e.g. flexbox stuff).
+- Functions to make page setup easier (`setupPage`) and CSS designs consistent (`normalize`).
 
 # Reference 
 
