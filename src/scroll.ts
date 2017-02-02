@@ -17,3 +17,11 @@ export const scrollY: types.CSSProperties = {
   '-webkit-overflow-scrolling': 'touch',
   overflowY: 'auto'
 };
+
+/**
+ * If you expect a child somewhere down in the tree to scroll
+ * you need to tell the browser to prevent a scroll bar here
+ */
+export var someChildWillScroll: types.NestedCSSProperties = {
+    overflow: 'hidden'
+}
