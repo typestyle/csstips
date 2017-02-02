@@ -9,6 +9,7 @@ export function normalize() {
    * - https://cdnjs.com/libraries/normalize
    * - then latest. Currently https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css
    * - then copy paste raw below
+   * - remove the sourmap at the end of the file
    * - fix the test (checks length of raw)
    * - update the link in this comment
    *
