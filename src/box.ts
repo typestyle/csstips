@@ -2,7 +2,7 @@
  * @module Box helpers
  * Having top, left, bottom, right seperated makes it easier to override and maintain individual properties
  */
-
+import * as types from 'typestyle/lib/types';
 /**
  * For `number` we assume pixels e.g. 5 => '5px'
  * For `string` *you* should provide the unit e.g. '5px'
@@ -105,7 +105,7 @@ export const verticallySpaced = (margin: BoxUnit) => {
       '&>*:last-child': {
         marginBottom: '0px !important',
       }
-    }
+    } as types.CSSProperties
   );
 };
 
@@ -121,7 +121,7 @@ export const horizontallySpaced = (margin: BoxUnit) => {
       },
       '&>*:last-child': {
         marginRight: '0px !important',
-      }
+      } as types.CSSProperties
     }
   );
 };
