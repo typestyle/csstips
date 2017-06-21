@@ -121,8 +121,8 @@ export const horizontallySpaced = (margin: BoxUnit) => {
       },
       '&>*:last-child': {
         marginRight: '0px !important',
-      } as types.CSSProperties
-    }
+      }
+    } as types.CSSProperties
   );
 };
 
