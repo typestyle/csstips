@@ -26,4 +26,4 @@ It essentially makes it easier for:
 
 # Docs 
 
-[http://typestyle.io](http://typestyle.io)
+[https://typestyle.github.io](https://typestyle.github.io)
