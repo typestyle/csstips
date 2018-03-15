@@ -127,6 +127,23 @@ export const horizontallySpaced = (margin: BoxUnit) => {
 };
 
 /**
+ * Puts a (horizontal AND vertical) margin between each child
+ */
+export const gridSpaced = (margin: BoxUnit) => {
+  const spacing = boxUnitToString(margin);
+  return (
+    {
+      marginTop: '-' + spacing,
+      marginLeft: '-' + spacing,
+      '&>*': {
+        marginTop: spacing,
+        marginLeft: spacing,
+      }
+    } as types.CSSProperties
+  );
+};
+
+/**
  * Gives this element the same size as the nearest offsetParent
  */
 export const fillParent = {
