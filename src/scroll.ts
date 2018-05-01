@@ -20,8 +20,9 @@ export const scrollY: types.CSSProperties = {
 
 /**
  * If you expect a child somewhere down in the tree to scroll
- * you need to tell the browser to prevent a scroll bar here
+ * you need to tell the browser to prevent a scroll bar. 
+ * Use : `parent(someChildWillScroll) > child(scroll)`
  */
-export var someChildWillScroll: types.NestedCSSProperties = {
+export const someChildWillScroll: types.NestedCSSProperties = {
     overflow: 'hidden'
 }
