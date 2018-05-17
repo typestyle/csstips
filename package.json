@@ -1,24 +1,25 @@
 {
-  "name": "csstips",
-  "version": "0.2.3",
-  "description": "",
-  "main": "./lib/index.js",
-  "typings": "./lib/index",
-  "scripts": {
-    "build": "tsc -p .",
-    "test": "npm run build",
-    "preversion": "npm run build",
-    "postversion": "git push --follow-tags && npm publish",
-    "start": "npm run build -- -w",
-    "u": "npm install typestyle@latest --save-exact --save-dev"
-  },
-  "author": "",
-  "license": "ISC",
-  "peerDependencies": {
-    "typestyle": "*"
-  },
-  "devDependencies": {
-    "typescript": "2.2.0-dev.20161130",
-    "typestyle": "0.15.0"
-  }
+    "name": "csstips",
+    "version": "0.2.3",
+    "description": "",
+    "main": "./lib/index.js",
+    "typings": "./lib/index",
+    "scripts": {
+        "build": "tsc -p .",
+        "test": "npm run build",
+        "preversion": "npm run build",
+        "postversion": "git push --follow-tags && npm publish",
+        "start": "npm run build -- -w",
+        "u": "npm install typestyle@latest --save-exact --save-dev"
+    },
+    "author": "",
+    "license": "ISC",
+    "peerDependencies": {
+        "typestyle": "^2.0.0"
+    },
+    "devDependencies": {
+        "csstype": "^2.5.2",
+        "typescript": "^2.8.3",
+        "typestyle": "^2.0.0"
+    }
 }

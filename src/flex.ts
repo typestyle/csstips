@@ -5,7 +5,19 @@
  * -ms- is needed for IE
  */
 import { extend } from 'typestyle';
+import { BoxAlignProperty, AlignItemsProperty, GlobalsNumber, JustifyContentProperty, FlexWrapProperty } from 'csstype';
 import * as types from 'typestyle/lib/types';
+
+// declare compatibility properties for IE10
+declare module 'typestyle/lib/types' {
+  interface CSSProperties {
+    '-ms-flex-align'?: BoxAlignProperty;
+    '-ms-flex-item-align'?: AlignItemsProperty;
+    '-ms-flex-wrap'?: FlexWrapProperty;
+    '-ms-flex-negative'?: GlobalsNumber;
+    '-ms-flex-pack'?: JustifyContentProperty;
+  }
+}
 
 /**
  * If you have more than one child prefer horizontal,vertical
