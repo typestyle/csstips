@@ -63,10 +63,23 @@ export const horizontal: types.CSSProperties = extend(flexRoot, {
   '-webkit-flex-direction': 'row',
   flexDirection: 'row'
 });
+  
 export const vertical: types.CSSProperties = extend(flexRoot, {
   '-ms-flex-direction': 'column',
   '-webkit-flex-direction': 'column',
   flexDirection: 'column'
+});
+  
+export const horizontalReverse: types.CSSProperties = extend(flexRoot, {
+  '-ms-flex-direction': 'row-reverse',
+  '-webkit-flex-direction': 'row-reverse',
+  flexDirection: 'row-reverse'
+});
+  
+export const verticalReverse: types.CSSProperties = extend(flexRoot, {
+  '-ms-flex-direction': 'column-reverse',
+  '-webkit-flex-direction': 'column-reverse',
+  flexDirection: 'column-reverse'
 });
 
 export var wrap: types.CSSProperties = {
