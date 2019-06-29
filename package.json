@@ -1,6 +1,6 @@
 {
     "name": "csstips",
-    "version": "0.3.0",
+    "version": "1.0.0",
     "description": "",
     "main": "./lib/index.js",
     "typings": "./lib/index",
