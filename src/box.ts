@@ -129,15 +129,17 @@ export const horizontallySpaced = (margin: BoxUnit) => {
 /**
  * Puts a (horizontal AND vertical) margin between each child
  */
-export const gridSpaced = (margin: BoxUnit) => {
-  const spacing = boxUnitToString(margin);
+export function gridSpaced(both: BoxUnit): types.CSSProperties;
+export function gridSpaced(topAndBottom: BoxUnit, leftAndRight = topAndBottom) {
+  const vertical = boxUnitToString(topAndBottom);
+  const horizontal = boxUnitToString(leftAndRight);
   return (
     {
-      marginTop: '-' + spacing,
-      marginLeft: '-' + spacing,
+      marginTop: '-' + vertical,
+      marginLeft: '-' + horizontal,
       '&>*': {
-        marginTop: spacing,
-        marginLeft: spacing,
+        marginTop: vertical,
+        marginLeft: horizontal,
       }
     } as types.CSSProperties
   );
