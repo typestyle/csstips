@@ -5,7 +5,8 @@
     "main": "./lib/index.js",
     "typings": "./lib/index",
     "scripts": {
-        "build": "tsc -p .",
+        "build": "tsc -p . && npm run build:umd",
+        "build:umd": "ts-node scripts/rollup.ts",
         "test": "npm run build",
         "preversion": "npm run build",
         "postversion": "git push --follow-tags && npm publish",
@@ -19,6 +20,11 @@
     },
     "devDependencies": {
         "csstype": "^2.5.2",
+        "rollup": "^1.21.2",
+        "rollup-plugin-typescript": "^1.0.1",
+        "rollup-plugin-uglify": "^6.0.3",
+        "ts-node": "^8.3.0",
+        "tslib": "^1.10.0",
         "typescript": "^2.8.3",
         "typestyle": "^2.0.0"
     }
